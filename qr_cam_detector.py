@@ -1,5 +1,5 @@
 class QRCamDetector:
-	def __init__(self,cam,detector):
+	def __init__(self, cam, detector):
 		self.cam = cam
 		self.detector = detector
 	
@@ -8,5 +8,5 @@ class QRCamDetector:
 		# Get image
 		_, img = self.cam.read()
 		# Get bounding box and data
-		data, bbox, _ = self.detector.detectAndDecode(img)
-		return data, bbox
+		data, _, _ = self.detector.detectAndDecode(img)
+		return data
