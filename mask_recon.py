@@ -8,7 +8,7 @@ import cv2
 
 class MaskRecon:
     def __init__(self, cam, coords, model_location):
-        print("[INFO] loading face mask detector model...")
+        print("[INFO] Loading face mask detector model...")
         self.mask_net = load_model(model_location)
         self.coords = coords
         self.cam = cam
