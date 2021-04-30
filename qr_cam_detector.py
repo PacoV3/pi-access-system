@@ -4,7 +4,7 @@ class QRCamDetector:
 		self.detector = detector
 	
 	# QR Detection
-	def qr_data_box(self):
+	def get_data(self):
 		# Get image
 		_, img = self.cam.read()
 		# Get bounding box and data
